@@ -1,0 +1,13 @@
+x = int(input('Digite um número: '))
+y = int(input('Digite outro número: '))
+def primo(x):
+    valor = 2
+    while x % valor != 0 and valor <= x/2:
+        valor = valor + 1
+        if x % valor == 0:
+            return False
+    else:
+            return True
+for n in range (x, y+1):
+        if primo(n):
+            print(n,'É primo! ')
