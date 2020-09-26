@@ -1,0 +1,10 @@
+numero = int(input("Digite um Número inteiro ") )
+
+resultado=1
+count=1
+
+while count <= numero:
+    resultado *= count
+    count = count + 1
+
+    print(f'{count}.')
